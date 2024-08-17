@@ -27,6 +27,8 @@ export const main = async (): Promise<void> => {
         } else {
             logger.error('Deployment failed with an unknown error.');
         }
+
+        process.exit(1);
     }
 };
 
