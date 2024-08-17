@@ -7,7 +7,7 @@ export const createKeyVault = async (): Promise<string> => {
   const credentials = new EnvironmentCredential();
   const managementClient = new KeyVaultManagementClient(credentials, config.subscriptionId);
 
-  const vaultName = `${config.environment}-deployment-vault`;
+  const vaultName = `github-vault-${config.environment}`;
 
   logger.info(`Creating Key Vault "${vaultName}" in ${config.location}...`);
 
