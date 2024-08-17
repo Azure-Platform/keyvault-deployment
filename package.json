@@ -1,0 +1,24 @@
+{
+  "name": "keyvault-deployment",
+  "version": "1.0.0",
+  "description": "A TypeScript-based solution for deploying Azure Key Vaults with multiple secrets",
+  "main": "src/main.TS",
+  "scripts": {
+    "start": "ts-node src/main.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@azure/arm-keyvault": "^3.1.0",
+    "@azure/identity": "^4.4.1",
+    "@azure/keyvault-secrets": "^4.8.0",
+    "dotenv": "^16.4.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^6.1.1",
+    "@types/node": "^22.4.0"
+  }
+}
