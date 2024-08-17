@@ -1,6 +1,5 @@
 import { createKeyVault } from './services/keyvault';
 import { addSecrets } from './services/secrets';
-import { config } from './config/env';
 import { logger } from './utils/logger';
 export const main = async (): Promise<void> => {
     try {
